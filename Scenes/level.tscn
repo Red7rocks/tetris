@@ -1,3 +1,69 @@
 [gd_scene format=3 uid="uid://c5oi5ghw3p1sx"]
 
+[ext_resource type="PackedScene" uid="uid://ccveeq6ch6lui" path="res://Scenes/ jblock.tscn" id="1_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://q5pe33dvqemf" path="res://Scenes/l_block.tscn" id="2_6phgx"]
+[ext_resource type="PackedScene" uid="uid://cbmb7ikdw3dxm" path="res://Scenes/i_block.tscn" id="3_8c0lf"]
+[ext_resource type="PackedScene" uid="uid://3g21pfw3ihaq" path="res://Scenes/square_block.tscn" id="4_754fn"]
+[ext_resource type="PackedScene" uid="uid://cbelcu6j5yky4" path="res://Scenes/t_block.tscn" id="5_bvt00"]
+[ext_resource type="PackedScene" uid="uid://curruy23ebf6c" path="res://Scenes/s_block.tscn" id="6_oqgf2"]
+[ext_resource type="PackedScene" uid="uid://r541hmribv33" path="res://Scenes/z_block.tscn" id="7_qxfql"]
+[ext_resource type="Texture2D" uid="uid://bvmhix1k1l2xl" path="res://Sprites/fullTileSheet.png" id="8_754fn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bvt00"]
+texture = ExtResource("8_754fn")
+texture_region_size = Vector2i(5, 5)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oqgf2"]
+tile_size = Vector2i(5, 5)
+occlusion_layer_0/light_mask = 1
+sources/5 = SubResource("TileSetAtlasSource_bvt00")
+tile_proxies/coords_level = [[0, Vector2i(0, 0)], [5, Vector2i(0, 0)], [0, Vector2i(1, 0)], [5, Vector2i(1, 0)], [0, Vector2i(2, 0)], [5, Vector2i(2, 0)], [0, Vector2i(3, 0)], [5, Vector2i(3, 0)], [1, Vector2i(0, 0)], [5, Vector2i(4, 0)], [1, Vector2i(1, 0)], [5, Vector2i(5, 0)], [1, Vector2i(2, 0)], [5, Vector2i(6, 0)], [1, Vector2i(3, 0)], [5, Vector2i(7, 0)], [2, Vector2i(0, 0)], [5, Vector2i(8, 0)], [2, Vector2i(1, 0)], [5, Vector2i(9, 0)], [2, Vector2i(2, 0)], [5, Vector2i(10, 0)], [2, Vector2i(3, 0)], [5, Vector2i(11, 0)], [3, Vector2i(0, 0)], [5, Vector2i(12, 0)]]
+
 [node name="Level" type="Node2D" unique_id=713667272]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=198834612]
+custom_minimum_size = Vector2(99, 100)
+offset_right = 1280.0
+offset_bottom = 720.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="JBlock" parent="." unique_id=2050845417 instance=ExtResource("1_k5f4k")]
+position = Vector2(176, 82)
+
+[node name="LBlock" parent="." unique_id=1738354160 instance=ExtResource("2_6phgx")]
+position = Vector2(163, 156)
+
+[node name="IBlock" parent="." unique_id=466557262 instance=ExtResource("3_8c0lf")]
+position = Vector2(96, 98)
+
+[node name="SquareBlock" parent="." unique_id=1180197736 instance=ExtResource("4_754fn")]
+position = Vector2(122, 122)
+
+[node name="TBlock" parent="." unique_id=870239545 instance=ExtResource("5_bvt00")]
+position = Vector2(165, 96)
+
+[node name="SBlock" parent="." unique_id=2093106090 instance=ExtResource("6_oqgf2")]
+position = Vector2(188, 84)
+
+[node name="ZBlock" parent="." unique_id=142060110 instance=ExtResource("7_qxfql")]
+position = Vector2(200, 109)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1118825429]
+tile_set = SubResource("TileSet_oqgf2")

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://r541hmribv33"]
+
+[ext_resource type="Texture2D" uid="uid://dmtfl7ycfotqi" path="res://Sprites/ZPiece.png" id="1_jdv0v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17ntm"]
+atlas = ExtResource("1_jdv0v")
+region = Rect2(0, 0, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkbf8"]
+atlas = ExtResource("1_jdv0v")
+region = Rect2(45, 0, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umaaw"]
+atlas = ExtResource("1_jdv0v")
+region = Rect2(30, 0, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pfpk"]
+atlas = ExtResource("1_jdv0v")
+region = Rect2(15, 0, 15, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dnlig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17ntm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qkbf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umaaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pfpk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ZBlock" type="Node2D" unique_id=142060110]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=434668254]
+sprite_frames = SubResource("SpriteFrames_dnlig")
+frame_progress = 0.031232461
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=539762132]
+sprite_frames = SubResource("SpriteFrames_dnlig")
+frame_progress = 0.031232461
