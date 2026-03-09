@@ -1,46 +1,16 @@
 [gd_scene format=3 uid="uid://ccveeq6ch6lui"]
 
-[ext_resource type="Texture2D" uid="uid://dwrypptvtkiik" path="res://Sprites/JPiece.png" id="1_el21a"]
+[ext_resource type="Script" uid="uid://foqykdkrag4q" path="res://Scenes/Jblock.cs" id="1_a68or"]
+[ext_resource type="Texture2D" uid="uid://2nnpuv4ka72y" path="res://Sprites/JPiece.png" id="1_el21a"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a68or"]
-atlas = ExtResource("1_el21a")
-region = Rect2(30, 0, 15, 15)
+[node name="JBlock" type="Area2D" unique_id=384247763]
+position = Vector2(9, 4)
+script = ExtResource("1_a68or")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_71lgr"]
-atlas = ExtResource("1_el21a")
-region = Rect2(15, 0, 15, 15)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071520650]
+position = Vector2(-9, -4)
+texture = ExtResource("1_el21a")
+offset = Vector2(5, 7.5)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jj8lj"]
-atlas = ExtResource("1_el21a")
-region = Rect2(0, 0, 15, 15)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7768p"]
-atlas = ExtResource("1_el21a")
-region = Rect2(45, 0, 15, 15)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_jujlc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a68or")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_71lgr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jj8lj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7768p")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[node name="JBlock" type="Node2D" unique_id=2050845417]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1462553514]
-sprite_frames = SubResource("SpriteFrames_jujlc")
-frame = 3
-frame_progress = 0.6170119
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1969768962]
+polygon = PackedVector2Array(1, -4, -4, -4, -4, 6, -9, 6, -9, 11, 1, 11)

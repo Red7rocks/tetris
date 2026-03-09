@@ -1,46 +1,8 @@
 [gd_scene format=3 uid="uid://cbmb7ikdw3dxm"]
 
-[ext_resource type="Texture2D" uid="uid://cx3o6fbswqjp3" path="res://Sprites/IPiece.png" id="1_bn3xe"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_chkxv"]
-atlas = ExtResource("1_bn3xe")
-region = Rect2(0, 0, 20, 20)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4c6l3"]
-atlas = ExtResource("1_bn3xe")
-region = Rect2(20, 0, 20, 20)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0a44h"]
-atlas = ExtResource("1_bn3xe")
-region = Rect2(40, 0, 20, 20)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c70jd"]
-atlas = ExtResource("1_bn3xe")
-region = Rect2(60, 0, 20, 20)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_pnegi"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_chkxv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4c6l3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0a44h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c70jd")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://cbnd72mdg2f6i" path="res://Sprites/IPiece.png" id="1_bn3xe"]
 
 [node name="IBlock" type="Node2D" unique_id=466557262]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1319643683]
-sprite_frames = SubResource("SpriteFrames_pnegi")
-frame = 1
-frame_progress = 0.50576574
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829133596]
+texture = ExtResource("1_bn3xe")

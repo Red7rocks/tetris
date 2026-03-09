@@ -24,6 +24,10 @@ window/size/viewport_height=720
 
 project/assembly_name="Tetris"
 
+[navigation]
+
+2d/default_cell_size=10.0
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

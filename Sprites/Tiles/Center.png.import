@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvmhix1k1l2xl"
-path="res://.godot/imported/fullTileSheet.png-b1213675c7d3b59dff92ec281fee99e8.ctex"
+uid="uid://dku25486kx6t6"
+path="res://.godot/imported/Center.png-d4288b60351c94df8beee0f99be8d73d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/fullTileSheet.png"
-dest_files=["res://.godot/imported/fullTileSheet.png-b1213675c7d3b59dff92ec281fee99e8.ctex"]
+source_file="res://Sprites/Tiles/Center.png"
+dest_files=["res://.godot/imported/Center.png-d4288b60351c94df8beee0f99be8d73d.ctex"]
 
 [params]
 

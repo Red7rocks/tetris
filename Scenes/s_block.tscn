@@ -1,46 +1,8 @@
 [gd_scene format=3 uid="uid://curruy23ebf6c"]
 
-[ext_resource type="Texture2D" uid="uid://djuxj73ctaktr" path="res://Sprites/SPiece.png" id="1_jruki"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_788tj"]
-atlas = ExtResource("1_jruki")
-region = Rect2(0, 0, 15, 15)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j7ont"]
-atlas = ExtResource("1_jruki")
-region = Rect2(15, 0, 15, 15)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_khro3"]
-atlas = ExtResource("1_jruki")
-region = Rect2(30, 0, 15, 15)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pscfs"]
-atlas = ExtResource("1_jruki")
-region = Rect2(45, 0, 15, 15)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_k448o"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_788tj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j7ont")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_khro3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pscfs")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://6dmwbpu2boh8" path="res://Sprites/SPiece.png" id="1_jruki"]
 
 [node name="SBlock" type="Node2D" unique_id=2093106090]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1777255995]
-sprite_frames = SubResource("SpriteFrames_k448o")
-frame = 3
-frame_progress = 0.5036067
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1728173350]
+texture = ExtResource("1_jruki")

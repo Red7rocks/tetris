@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://q5pe33dvqemf"]
 
+[ext_resource type="Script" uid="uid://4cmlry262o0t" path="res://Scenes/l_block.gd" id="1_3yqlm"]
 [ext_resource type="Texture2D" uid="uid://b5rcsb7s6gryf" path="res://Sprites/LPiece.png" id="1_yy3q7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3yqlm"]
@@ -39,6 +40,7 @@ animations = [{
 }]
 
 [node name="LBlock" type="Node2D" unique_id=1738354160]
+script = ExtResource("1_3yqlm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1852652018]
 sprite_frames = SubResource("SpriteFrames_ubpmx")
