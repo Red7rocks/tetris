@@ -62,7 +62,8 @@ tile_set = SubResource("TileSet_crh0w")
 
 [node name="LiveBlocks" type="Node2D" parent="." unique_id=1470998507]
 
-[node name="Timer" type="Timer" parent="." unique_id=633437068]
+[node name="BlockSpawnTimer" type="Timer" parent="." unique_id=633437068]
+wait_time = 0.5
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="BlockSpawnTimerTimeout"]
+[connection signal="timeout" from="BlockSpawnTimer" to="." method="BlockSpawnTimerTimeout"]

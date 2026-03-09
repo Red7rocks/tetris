@@ -18,12 +18,13 @@ public partial class Level : Node2D
 	}
 	public void BlockSpawnTimerTimeout()
 	{
-		Area2D block = Blocks[rng.RandiRange(0,8)].Instantiate<Area2D>();
+		Area2D block = Blocks[rng.RandiRange(0,6)].Instantiate<Area2D>();
 		GetNode<Node2D>("LiveBlocks").AddChild(block);
 	}
 	public override void _Ready()
 	{
 		loadBlocks();
+		GetNode<Timer>("BlockSpawnTimer").WaitTime = Global.spawnTime;
 	}
 	/*public override void _Process(double delta)
 	{
