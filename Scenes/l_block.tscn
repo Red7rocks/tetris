@@ -1,48 +1,14 @@
-[gd_scene format=3 uid="uid://q5pe33dvqemf"]
+[gd_scene format=3 uid="uid://comj12jahhyd6"]
 
-[ext_resource type="Script" uid="uid://4cmlry262o0t" path="res://Scenes/l_block.gd" id="1_3yqlm"]
-[ext_resource type="Texture2D" uid="uid://b5rcsb7s6gryf" path="res://Sprites/LPiece.png" id="1_yy3q7"]
+[ext_resource type="Texture2D" uid="uid://di2oshu5kudbp" path="res://Sprites/LPiece.png" id="1_ixs1j"]
+[ext_resource type="Script" uid="uid://b2rpdfr2jidsx" path="res://Scenes/LBlock.cs" id="1_l1ga3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3yqlm"]
-atlas = ExtResource("1_yy3q7")
-region = Rect2(0, 0, 15, 15)
+[node name="LBlock" type="Area2D" unique_id=973802207]
+script = ExtResource("1_l1ga3")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wpd48"]
-atlas = ExtResource("1_yy3q7")
-region = Rect2(15, 0, 15, 15)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1624027595]
+position = Vector2(5, 7.5)
+texture = ExtResource("1_ixs1j")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gf6kr"]
-atlas = ExtResource("1_yy3q7")
-region = Rect2(30, 0, 15, 15)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mtnu6"]
-atlas = ExtResource("1_yy3q7")
-region = Rect2(45, 0, 15, 15)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ubpmx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3yqlm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wpd48")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gf6kr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mtnu6")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[node name="LBlock" type="Node2D" unique_id=1738354160]
-script = ExtResource("1_3yqlm")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1852652018]
-sprite_frames = SubResource("SpriteFrames_ubpmx")
-frame = 2
-frame_progress = 0.44919655
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2035467146]
+polygon = PackedVector2Array(5, 0, 5, 10, 10, 10, 10, 15, 0, 15, 0, 0)

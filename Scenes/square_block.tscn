@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://3g21pfw3ihaq"]
 
+[ext_resource type="Script" uid="uid://1g0tdg05mln8" path="res://Scenes/SquareBlock.cs" id="1_k6hcn"]
 [ext_resource type="Texture2D" uid="uid://cqop0co67j7tr" path="res://Sprites/SquarePiece.png" id="1_ofqo3"]
 
-[node name="SquareBlock" type="Node2D" unique_id=1180197736]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ofqo3"]
+size = Vector2(10, 10)
+
+[node name="SquareBlock" type="Area2D" unique_id=1649356597]
+script = ExtResource("1_k6hcn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1476661055]
 texture = ExtResource("1_ofqo3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=18252164]
+shape = SubResource("RectangleShape2D_ofqo3")

@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://2nnpuv4ka72y" path="res://Sprites/JPiece.png" id="1_el21a"]
 
 [node name="JBlock" type="Area2D" unique_id=384247763]
-position = Vector2(9, 4)
 script = ExtResource("1_a68or")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071520650]

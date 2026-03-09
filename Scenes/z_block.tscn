@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://r541hmribv33"]
 
+[ext_resource type="Script" uid="uid://ctoqtydyff64l" path="res://Scenes/ZBlock.cs" id="1_17ntm"]
 [ext_resource type="Texture2D" uid="uid://dxxljyieuq7lb" path="res://Sprites/ZPiece.png" id="1_jdv0v"]
 
-[node name="ZBlock" type="Node2D" unique_id=142060110]
+[node name="ZBlock" type="Area2D" unique_id=332878754]
+script = ExtResource("1_17ntm")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=731076027]
+position = Vector2(7.5, 5)
 texture = ExtResource("1_jdv0v")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1250311225]
+polygon = PackedVector2Array(10, 0, 10, 5, 15, 5, 15, 10, 5, 10, 5, 5, 0, 5, 0, 0)

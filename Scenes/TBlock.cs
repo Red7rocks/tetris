@@ -1,9 +1,8 @@
 using Godot;
 using System;
 
-public partial class Jblock : Area2D
+public partial class TBlock : Area2D
 {
-	
 	public override void _Ready()
 	{
 		Position = new Vector2(650,0);

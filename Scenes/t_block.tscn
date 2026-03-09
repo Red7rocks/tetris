@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://cbelcu6j5yky4"]
 
+[ext_resource type="Script" uid="uid://c4esqiuujo8f0" path="res://Scenes/TBlock.cs" id="1_g1gms"]
 [ext_resource type="Texture2D" uid="uid://bir34wdw1f8wo" path="res://Sprites/TPiece.png" id="1_v10k5"]
 
-[node name="TBlock" type="Node2D" unique_id=870239545]
+[node name="TBlock" type="Area2D" unique_id=2067195339]
+script = ExtResource("1_g1gms")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=221943012]
+position = Vector2(7.5, 5)
 texture = ExtResource("1_v10k5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=798811504]
+polygon = PackedVector2Array(0, 5, 5, 5, 5, 0, 10, 0, 10, 5, 15, 5, 15, 10, 0, 10)
