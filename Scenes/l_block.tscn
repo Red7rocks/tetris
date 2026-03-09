@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://comj12jahhyd6"]
 
+[ext_resource type="Script" uid="uid://cosv8iyphe1qy" path="res://Scenes/Block.cs" id="1_3yqlm"]
 [ext_resource type="Texture2D" uid="uid://di2oshu5kudbp" path="res://Sprites/LPiece.png" id="1_ixs1j"]
-[ext_resource type="Script" uid="uid://b2rpdfr2jidsx" path="res://Scenes/LBlock.cs" id="1_l1ga3"]
 
 [node name="LBlock" type="Area2D" unique_id=973802207]
-script = ExtResource("1_l1ga3")
+script = ExtResource("1_3yqlm")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1624027595]
 position = Vector2(30.000002, 45)

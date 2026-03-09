@@ -6,6 +6,7 @@ public partial class Level : Node2D
 {
 	Dictionary<int, PackedScene> Blocks = new Dictionary<int, PackedScene>();
 	RandomNumberGenerator rng = new RandomNumberGenerator();
+
 	public void loadBlocks()
 	{
 		Blocks.Add(0, ResourceLoader.Load<PackedScene>("res://Scenes/j_block.tscn"));
@@ -16,19 +17,24 @@ public partial class Level : Node2D
 		Blocks.Add(5, ResourceLoader.Load<PackedScene>("res://Scenes/t_block.tscn"));
 		Blocks.Add(6, ResourceLoader.Load<PackedScene>("res://Scenes/square_block.tscn"));
 	}
-	public void BlockSpawnTimerTimeout()
+	public void GameTickTimerTimeout()
 	{
 		Area2D block = Blocks[rng.RandiRange(0,6)].Instantiate<Area2D>();
 		GetNode<Node2D>("LiveBlocks").AddChild(block);
 	}
 	public override void _Ready()
 	{
+		rng.Randomize();
 		loadBlocks();
-		GetNode<Timer>("BlockSpawnTimer").WaitTime = Global.spawnTime;
+		Area2D block = Blocks[3].Instantiate<Area2D>();
+		GetNode<Node2D>("LiveBlocks").AddChild(block);
+		GetNode<Timer>("GameTickTimer").WaitTime = Global.gameTick;	
 	}
 	/*public override void _Process(double delta)
 	{
-		Area2D block = Blocks[0].Instantiate<Area2D>();
-		GetNode<Node2D>("LiveBlocks").AddChild(block);
+		direction = Vector2.Zero;				//Set initial input direction to 0
+		Node2D liveBlocks = GetNode<Node2D>("LiveBlocks");
+		Area2D liveBlock = liveBlocks.GetChild<Area2D>(liveBlocks.GetChildCount() - 1);		//The -1 makes sure to grab the most recent block spawned
+		liveBlock.Position += direction;
 	}*/
 }

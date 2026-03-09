@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://3g21pfw3ihaq"]
 
-[ext_resource type="Script" uid="uid://1g0tdg05mln8" path="res://Scenes/SquareBlock.cs" id="1_k6hcn"]
+[ext_resource type="Script" uid="uid://cosv8iyphe1qy" path="res://Scenes/Block.cs" id="1_k6hcn"]
 [ext_resource type="Texture2D" uid="uid://cqop0co67j7tr" path="res://Sprites/SquarePiece.png" id="1_ofqo3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ofqo3"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://curruy23ebf6c"]
 
-[ext_resource type="Script" uid="uid://yalcrtqcykst" path="res://Scenes/SBlock.cs" id="1_788tj"]
+[ext_resource type="Script" uid="uid://cosv8iyphe1qy" path="res://Scenes/Block.cs" id="1_788tj"]
 [ext_resource type="Texture2D" uid="uid://6dmwbpu2boh8" path="res://Sprites/SPiece.png" id="1_jruki"]
 
 [node name="SBlock" type="Area2D" unique_id=2002936458]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ccveeq6ch6lui"]
 
-[ext_resource type="Script" uid="uid://foqykdkrag4q" path="res://Scenes/Jblock.cs" id="1_ijpwv"]
+[ext_resource type="Script" uid="uid://cosv8iyphe1qy" path="res://Scenes/Block.cs" id="1_ijpwv"]
 [ext_resource type="Texture2D" uid="uid://2nnpuv4ka72y" path="res://Sprites/JPiece.png" id="2_76uki"]
 
 [node name="JBlock" type="Area2D" unique_id=384247763]
