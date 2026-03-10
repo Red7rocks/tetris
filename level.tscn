@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://daht5uu8amkc0"]
+
+[ext_resource type="Script" uid="uid://bky6oicc7bwoa" path="res://Level.cs" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://c36r6kvnikw0x" path="res://Sprites/singleBlock.png" id="2_vonw3"]
+[ext_resource type="Texture2D" uid="uid://diod42tkflx2c" path="res://Sprites/singleBlockGreen.png" id="3_km5ld"]
+[ext_resource type="Texture2D" uid="uid://cqn765cvh7e4v" path="res://Sprites/singleBlockOrange.png" id="4_i2t4f"]
+[ext_resource type="Texture2D" uid="uid://c3phxp2clkf0a" path="res://Sprites/singleBlockPurple.png" id="5_8cye3"]
+[ext_resource type="Texture2D" uid="uid://duktnyupkp0uk" path="res://Sprites/singleBlockRed.png" id="6_2orkt"]
+[ext_resource type="Texture2D" uid="uid://ca8rlv3wdoich" path="res://Sprites/singleBlockTeal.png" id="7_aicyk"]
+[ext_resource type="Texture2D" uid="uid://d1s2tm878j8xs" path="res://Sprites/singleBlockYellow.png" id="8_8b0r0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6smj"]
+texture = ExtResource("2_vonw3")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5j5c"]
+texture = ExtResource("3_km5ld")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5pxul"]
+texture = ExtResource("4_i2t4f")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fedht"]
+texture = ExtResource("5_8cye3")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c15r"]
+texture = ExtResource("6_2orkt")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ait7k"]
+texture = ExtResource("7_aicyk")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42xju"]
+texture = ExtResource("8_8b0r0")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0b4ue"]
+tile_size = Vector2i(10, 10)
+sources/0 = SubResource("TileSetAtlasSource_h6smj")
+sources/1 = SubResource("TileSetAtlasSource_v5j5c")
+sources/2 = SubResource("TileSetAtlasSource_5pxul")
+sources/3 = SubResource("TileSetAtlasSource_fedht")
+sources/4 = SubResource("TileSetAtlasSource_4c15r")
+sources/5 = SubResource("TileSetAtlasSource_ait7k")
+sources/6 = SubResource("TileSetAtlasSource_42xju")
+tile_proxies/coords_level = [[1, Vector2i(0, 0)], [9, Vector2i(0, 0)], [2, Vector2i(0, 0)], [9, Vector2i(1, 0)], [3, Vector2i(0, 0)], [9, Vector2i(2, 0)], [4, Vector2i(0, 0)], [9, Vector2i(3, 0)], [5, Vector2i(0, 0)], [9, Vector2i(4, 0)], [6, Vector2i(0, 0)], [9, Vector2i(5, 0)], [7, Vector2i(0, 0)], [9, Vector2i(6, 0)], [8, Vector2i(0, 0)], [9, Vector2i(7, 0)]]
+
+[node name="level" type="Node2D" unique_id=991281944]
+script = ExtResource("1_u52ul")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1492006884]
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_0b4ue")
+
+[node name="Timer" type="Timer" parent="." unique_id=1900225276]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di2oshu5kudbp"
-path="res://.godot/imported/LPiece.png-3183f68ca5cafad943c10345d3dec25c.ctex"
+uid="uid://cqn765cvh7e4v"
+path="res://.godot/imported/singleBlockOrange.png-706a5cd2f593a8a4ff29be5dd35631dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/LPiece.png"
-dest_files=["res://.godot/imported/LPiece.png-3183f68ca5cafad943c10345d3dec25c.ctex"]
+source_file="res://Sprites/singleBlockOrange.png"
+dest_files=["res://.godot/imported/singleBlockOrange.png-706a5cd2f593a8a4ff29be5dd35631dc.ctex"]
 
 [params]
 

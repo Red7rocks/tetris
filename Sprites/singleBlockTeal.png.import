@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6dmwbpu2boh8"
-path="res://.godot/imported/SPiece.png-5a46ffd673d9e4d68b8e70dd4d9bbdd3.ctex"
+uid="uid://ca8rlv3wdoich"
+path="res://.godot/imported/singleBlockTeal.png-b1771714507d9b687979db56185de711.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SPiece.png"
-dest_files=["res://.godot/imported/SPiece.png-5a46ffd673d9e4d68b8e70dd4d9bbdd3.ctex"]
+source_file="res://Sprites/singleBlockTeal.png"
+dest_files=["res://.godot/imported/singleBlockTeal.png-b1771714507d9b687979db56185de711.ctex"]
 
 [params]
 

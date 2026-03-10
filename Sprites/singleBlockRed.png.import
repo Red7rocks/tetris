@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2nnpuv4ka72y"
-path="res://.godot/imported/JPiece.png-9c90667842079a415f247d4ac071d107.ctex"
+uid="uid://duktnyupkp0uk"
+path="res://.godot/imported/singleBlockRed.png-235d71a2a407c363817713ed7de94bf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/JPiece.png"
-dest_files=["res://.godot/imported/JPiece.png-9c90667842079a415f247d4ac071d107.ctex"]
+source_file="res://Sprites/singleBlockRed.png"
+dest_files=["res://.godot/imported/singleBlockRed.png-235d71a2a407c363817713ed7de94bf2.ctex"]
 
 [params]
 

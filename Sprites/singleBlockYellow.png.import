@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqop0co67j7tr"
-path="res://.godot/imported/SquarePiece.png-5efec658ed20c4ecd30b985671f8df21.ctex"
+uid="uid://d1s2tm878j8xs"
+path="res://.godot/imported/singleBlockYellow.png-aba40e030dee64848be58ba353f4c69e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SquarePiece.png"
-dest_files=["res://.godot/imported/SquarePiece.png-5efec658ed20c4ecd30b985671f8df21.ctex"]
+source_file="res://Sprites/singleBlockYellow.png"
+dest_files=["res://.godot/imported/singleBlockYellow.png-aba40e030dee64848be58ba353f4c69e.ctex"]
 
 [params]
 

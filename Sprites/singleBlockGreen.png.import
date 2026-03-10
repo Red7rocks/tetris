@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bih5pdenoooym"
-path="res://.godot/imported/EdgeTiles.png-2b1953df8bc18a8ae66b2c20b01769fb.ctex"
+uid="uid://diod42tkflx2c"
+path="res://.godot/imported/singleBlockGreen.png-a26dd6e2579930860214370c92984277.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tiles/EdgeTiles.png"
-dest_files=["res://.godot/imported/EdgeTiles.png-2b1953df8bc18a8ae66b2c20b01769fb.ctex"]
+source_file="res://Sprites/singleBlockGreen.png"
+dest_files=["res://.godot/imported/singleBlockGreen.png-a26dd6e2579930860214370c92984277.ctex"]
 
 [params]
 

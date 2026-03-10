@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dku25486kx6t6"
-path="res://.godot/imported/Center.png-d4288b60351c94df8beee0f99be8d73d.ctex"
+uid="uid://c3phxp2clkf0a"
+path="res://.godot/imported/singleBlockPurple.png-c8038c3583dacc43fc52b26f13e42027.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tiles/Center.png"
-dest_files=["res://.godot/imported/Center.png-d4288b60351c94df8beee0f99be8d73d.ctex"]
+source_file="res://Sprites/singleBlockPurple.png"
+dest_files=["res://.godot/imported/singleBlockPurple.png-c8038c3583dacc43fc52b26f13e42027.ctex"]
 
 [params]
 

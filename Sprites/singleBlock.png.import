@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rf65gh2abhlo"
-path="res://.godot/imported/InnerCornerTiles.png-6497335531deb6d76e174a56861c754d.ctex"
+uid="uid://c36r6kvnikw0x"
+path="res://.godot/imported/singleBlock.png-bdaa3c9e409c83b0ea902504be20637b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tiles/InnerCornerTiles.png"
-dest_files=["res://.godot/imported/InnerCornerTiles.png-6497335531deb6d76e174a56861c754d.ctex"]
+source_file="res://Sprites/singleBlock.png"
+dest_files=["res://.godot/imported/singleBlock.png-bdaa3c9e409c83b0ea902504be20637b.ctex"]
 
 [params]
 

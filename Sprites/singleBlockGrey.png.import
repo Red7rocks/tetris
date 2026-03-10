@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbnd72mdg2f6i"
-path="res://.godot/imported/IPiece.png-a202df9beba29893ce90c76b67d615f1.ctex"
+uid="uid://bgydmr3iyqmpi"
+path="res://.godot/imported/singleBlockGrey.png-1e5ba243a56b1ae7605fb870075ad2e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/IPiece.png"
-dest_files=["res://.godot/imported/IPiece.png-a202df9beba29893ce90c76b67d615f1.ctex"]
+source_file="res://Sprites/singleBlockGrey.png"
+dest_files=["res://.godot/imported/singleBlockGrey.png-1e5ba243a56b1ae7605fb870075ad2e2.ctex"]
 
 [params]
 

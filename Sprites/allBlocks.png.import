@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bir34wdw1f8wo"
-path="res://.godot/imported/TPiece.png-082a94b9006bc7c976e54fe22201ecf7.ctex"
+uid="uid://cb1qj1o08dgcw"
+path="res://.godot/imported/allBlocks.png-ead7a48ca241ad499076d04b8fafd33b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/TPiece.png"
-dest_files=["res://.godot/imported/TPiece.png-082a94b9006bc7c976e54fe22201ecf7.ctex"]
+source_file="res://Sprites/allBlocks.png"
+dest_files=["res://.godot/imported/allBlocks.png-ead7a48ca241ad499076d04b8fafd33b.ctex"]
 
 [params]
 
