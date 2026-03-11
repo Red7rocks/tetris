@@ -22,6 +22,12 @@ public partial class Level : Node2D
 			if (board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Right))
 				activePiece.piecePosition += Vector2I.Right;
 		}
+		if (Input.IsActionJustPressed("up"))
+		{
+			while(board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Down)){
+				activePiece = board.MoveDown(activePiece);
+			}
+		}
 		if (Input.IsActionJustPressed("down"))
 		{
 			activePiece = board.MoveDown(activePiece);
