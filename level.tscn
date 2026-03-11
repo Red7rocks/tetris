@@ -63,5 +63,6 @@ scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_0b4ue")
 
 [node name="Timer" type="Timer" parent="." unique_id=1900225276]
+autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
