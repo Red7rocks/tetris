@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public partial class Level : Node2D
 {
-	RandomNumberGenerator rng = new RandomNumberGenerator();
 	TileMapLayer blockTileMap;
 	
 	Board board;
@@ -12,30 +11,45 @@ public partial class Level : Node2D
 	Piece activePiece;
 
 	void readInput(){
+		bool moved = false;
 		if (Input.IsActionJustPressed("left"))
 		{
 		if (board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Left))
 			activePiece.piecePosition += Vector2I.Left;
+			moved = true;
 		}
 		if (Input.IsActionJustPressed("right"))
 		{
-			if (board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Right))
+			if (board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Right)){
 				activePiece.piecePosition += Vector2I.Right;
+				moved = true;
+			}
 		}
 		if (Input.IsActionJustPressed("up"))
 		{
 			while(board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Down)){
 				activePiece = board.MoveDown(activePiece);
+				moved = true;
 			}
 		}
 		if (Input.IsActionJustPressed("down"))
 		{
 			activePiece = board.MoveDown(activePiece);
+			moved = true;
+		}
+		if(moved){
+			updateBoardAndPiece();
 		}
 	}
 	void _on_timer_timeout(){
 		activePiece = board.MoveDown(activePiece);
+		updateBoardAndPiece();
 	}
+	void updateBoardAndPiece(){
+		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
+		activePiece.DrawActivePiece(blockTileMap);
+	}
+	
 	public override void _Ready()
 	{
 		board = new Board(10, 20);
@@ -44,12 +58,10 @@ public partial class Level : Node2D
 		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
 		
 		board.rng.Randomize();
-		activePiece = new Piece(rng.RandiRange(0,6));
+		activePiece = new Piece(board.rng.RandiRange(0,6));
 	}
 	public override void _Process(double delta)
 	{
-		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
-		activePiece.DrawActivePiece(blockTileMap);
 		readInput();
 	}
 }

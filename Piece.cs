@@ -16,7 +16,7 @@ public class Piece
 		foreach (Vector2I block in activeShape)
 		{
 			Vector2I tile = piecePosition + block;
-			tilemap.SetCell(tile, pieceType, Vector2I.Zero);
+			tilemap.SetCell(tile + Global.imageOffset, pieceType, Vector2I.Zero);
 		}
 	}
 }

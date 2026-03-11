@@ -17,7 +17,7 @@ public class BoardRenderer
 			for(int y=0;y<height;y++)
 			{
 				if(board[x,y] != 0)
-				tilemap.SetCell(new Vector2I(x,y), board[x,y], Vector2I.Zero);
+				tilemap.SetCell(new Vector2I(x,y) + Global.imageOffset, board[x,y], Vector2I.Zero);
 			}
 		}
 	}
