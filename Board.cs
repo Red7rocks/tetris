@@ -86,11 +86,11 @@ public class Board
 		}
 		return activePiece;
 	}
-	rotateClockwise()
+	public void rotateClockwise(Piece piece)
 	{
 		
 	}
-	rotateCounterClockwise()
+	public void rotateCounterClockwise(Piece piece)
 	{
 		
 	}

@@ -9,7 +9,7 @@ public class Piece
 	{
 		pieceType = type;
 		activeShape = PieceData.shape[type];
-		piecePosition = new Vector2I(5,0);
+		piecePosition = new Vector2I(4,0);
 	}
 	public void DrawActivePiece(TileMapLayer tilemap)
 	{

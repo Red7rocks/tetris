@@ -66,10 +66,10 @@ public partial class Level : Node2D
 		board = new Board(10, 20);
 		blockTileMap = GetNode<TileMapLayer>("TileMapLayer");
 		tileRenderer = new BoardRenderer(blockTileMap);
-		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
 		
 		board.rng.Randomize();
 		activePiece = new Piece(board.rng.RandiRange(1,7));
+		updateBoardAndPiece();
 	}
 	public override void _Process(double delta)
 	{
