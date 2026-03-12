@@ -82,7 +82,7 @@ public class Board
 		else
 		{
 			LockPiece(activePiece);
-			activePiece = new Piece(rng.RandiRange(0,6));
+			activePiece = new Piece(rng.RandiRange(1,7));
 		}
 		return activePiece;
 	}

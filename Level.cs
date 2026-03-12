@@ -58,7 +58,7 @@ public partial class Level : Node2D
 		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
 		
 		board.rng.Randomize();
-		activePiece = new Piece(board.rng.RandiRange(0,6));
+		activePiece = new Piece(board.rng.RandiRange(1,7));
 	}
 	public override void _Process(double delta)
 	{
