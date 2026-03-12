@@ -86,4 +86,12 @@ public class Board
 		}
 		return activePiece;
 	}
+	rotateClockwise()
+	{
+		
+	}
+	rotateCounterClockwise()
+	{
+		
+	}
 }

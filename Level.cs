@@ -37,6 +37,16 @@ public partial class Level : Node2D
 			activePiece = board.MoveDown(activePiece);
 			moved = true;
 		}
+		if (Input.IsActionJustPressed("rotateLeft"))
+		{
+			board.rotateCounterClockwise(activePiece);
+			moved = true;
+		}
+		if (Input.IsActionJustPressed("rotateRight"))
+		{
+			board.rotateClockwise(activePiece);
+			moved = true;
+		}
 		if(moved){
 			updateBoardAndPiece();
 		}
@@ -49,6 +59,7 @@ public partial class Level : Node2D
 		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
 		activePiece.DrawActivePiece(blockTileMap);
 	}
+
 	
 	public override void _Ready()
 	{
