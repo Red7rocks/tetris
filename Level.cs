@@ -30,7 +30,7 @@ public partial class Level : Node2D
 			while(board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Down)){
 				activePiece = board.MoveDown(activePiece);
 			}
-			moved = true;
+			_on_timer_timeout();
 		}
 		if (Input.IsActionJustPressed("down"))
 		{
@@ -48,29 +48,28 @@ public partial class Level : Node2D
 			moved = true;
 		}
 		if(moved){
-			updateBoardAndPiece();
+			drawBoardAndPiece();
 		}
 	}
 	void _on_timer_timeout(){
 		activePiece = board.MoveDown(activePiece);
-		updateBoardAndPiece();
+		drawBoardAndPiece();
 	}
-	void updateBoardAndPiece(){
+	void drawBoardAndPiece(){
 		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
 		tileRenderer.DrawActivePiece(activePiece);
 	}
-
-	
 	public override void _Ready()
 	{
 		board = new Board(10, 20);
 		blockTileMap = GetNode<TileMapLayer>("TileMapLayer");
 		tileRenderer = new BoardRenderer(blockTileMap);
-		
+
 		board.rng.Randomize();
 		activePiece = new Piece(board.rng.RandiRange(1,7));
 		board.MoveDown(activePiece);
-		updateBoardAndPiece();
+
+		drawBoardAndPiece();
 	}
 	public override void _Process(double delta)
 	{
