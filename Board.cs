@@ -83,6 +83,7 @@ public class Board
 		{
 			LockPiece(activePiece);
 			activePiece = new Piece(rng.RandiRange(1,7));
+			MoveDown(activePiece);
 		}
 		return activePiece;
 	}

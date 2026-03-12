@@ -9,14 +9,6 @@ public class Piece
 	{
 		pieceType = type;
 		activeShape = PieceData.shape[type];
-		piecePosition = new Vector2I(4,0);
-	}
-	public void DrawActivePiece(TileMapLayer tilemap)
-	{
-		foreach (Vector2I block in activeShape)
-		{
-			Vector2I tile = piecePosition + block;
-			tilemap.SetCell(tile + Global.imageOffset, pieceType, Vector2I.Zero);
-		}
+		piecePosition = new Vector2I(4,-2);
 	}
 }

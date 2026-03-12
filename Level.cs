@@ -29,8 +29,8 @@ public partial class Level : Node2D
 		{
 			while(board.IsValidMove(activePiece, activePiece.piecePosition + Vector2I.Down)){
 				activePiece = board.MoveDown(activePiece);
-				moved = true;
 			}
+			moved = true;
 		}
 		if (Input.IsActionJustPressed("down"))
 		{
@@ -57,7 +57,7 @@ public partial class Level : Node2D
 	}
 	void updateBoardAndPiece(){
 		tileRenderer.DrawBoard(board.Grid, board.Width, board.Height);
-		activePiece.DrawActivePiece(blockTileMap);
+		tileRenderer.DrawActivePiece(activePiece);
 	}
 
 	
@@ -69,6 +69,7 @@ public partial class Level : Node2D
 		
 		board.rng.Randomize();
 		activePiece = new Piece(board.rng.RandiRange(1,7));
+		board.MoveDown(activePiece);
 		updateBoardAndPiece();
 	}
 	public override void _Process(double delta)

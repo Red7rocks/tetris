@@ -21,5 +21,12 @@ public class BoardRenderer
 			}
 		}
 	}
-
+	public void DrawActivePiece(Piece activePiece)
+	{
+		foreach (Vector2I block in activePiece.activeShape)
+		{
+			Vector2I tile = activePiece.piecePosition + block;
+			tilemap.SetCell(tile + Global.imageOffset, activePiece.pieceType, Vector2I.Zero);
+		}
+	}
 }
